@@ -1,113 +1,137 @@
+"use client"
 import Image from "next/image";
+import Link from "next/link";
+import { FiArrowUpRight } from "react-icons/fi";
+import { PiArrowUpRightThin } from "react-icons/pi";
+import ComparingItem from "@/components/ComparingItem";
+
+
+import SonyHero from "@/public/74739_original_local_1200x1050_converted.webp"
+import sony4 from "@/public/sony4.webp"
+import base from "@/public/base.jpg"
+import base700 from "@/public/noise_cancelling_headphones_700_blk_EC_hero.webp"
+import sennheiser from "@/public/sennheiser.jpg"
+import apple from "@/public/apple.jpg"
+import {motion} from "framer-motion"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <div className="max-w-4xl px-4 my-8 mx-auto">
+      <div className="my-14">
+          <div className="flex flex-col">
+            <h1 className="text-4xl h-8 font-bold text-blue-500">Korazon</h1>
+            <h1 className="text-xl font-bold text-blue-500">Clicks</h1>
+          </div>
+      </div>
+<article className=" space-y-8 mt-24 text-gray-800">
+        <h1 className="md:text-4xl text-3xl font-bold text-gray-800">Exploring the World of Noise-Canceling Headphones A Comprehensive Comparison</h1>
+        <div className="bg-slate-100 p-4 rounded-3xl border overflow-hidden">
+          <motion.div className="" initial={{opacity:0,y:50}} animate={{opacity:1,y:0}}>
+            <Image src={SonyHero} alt="Noise-Canceling Headphones" className="w-full h-[400px]  object-contain  " width={400} height={400} />
+          </motion.div>
         </div>
-      </div>
+        <section className="mt-4">
+            <h2 className="text-2xl font-bold">Introduction</h2>
+            <p className="text-gray-600 border-l-2 border-blue-500 pl-4 my-3">In the realm of audio technology, noise-canceling headphones have become essential for those seeking an immersive and undisturbed listening experience. This article delves into the world of noise cancellation technology and compares some of the leading models from different brands, including Sony WH-1000XM3 and WH-1000XM4, Bose QuietComfort 35 II, Bose Noise Cancelling Headphones 700, Sennheiser Momentum Wireless 3, and Apple AirPods Max.</p>
+            <button className="bg-blue-500 w-full md:w-fit hover:bg-blue-600 duration-150 mt-4 flex justify-center  gap-4 items-center text-white text-xl px-8  py-3 rounded border ">
+              <div className="flex flex-col items-start">
+                <span>Get Sony WH-1000XM4</span>
+                <span className="text-sm text-white/50">Amazon Link</span>
+              </div>
+              <PiArrowUpRightThin size={35}/>
+            </button>
+        </section>
 
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <section>
+            <h3 className="text-2xl font-bold">Understanding Noise-Canceling Technology</h3>
+            <p className="text-gray-600">Noise-canceling technology is designed to reduce or eliminate unwanted ambient sounds, allowing users to enjoy their music or calls without interference. There are two primary types:</p>
+            <ol className="list-decimal ml-4 text-gray-600">
+                <li><em>Passive Noise Cancellation:</em> Achieved through the physical design of the headphones, which acts as a barrier to block out external noise.</li>
+                <li><em>Active Noise Cancellation (ANC):</em> Uses advanced technology, including microphones and electronic processing, to analyze and counteract external sounds in real-time.</li>
+            </ol>
+        </section>
 
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
+        <section>
+            <h2 className="text-2xl font-bold mb-12">Comparing Top Noise-Canceling Headphones</h2>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+
+
+          <ComparingItem name="Sony WH-1000XM3" image={SonyHero} price="[Insert Price]" keyFeatures={[
+              "Industry-leading noise cancellation.",
+              "Exceptional sound quality with a balanced audio profile.",
+              "Intuitive touch controls for playback, calls, and volume.",
+              "Comfortable design for prolonged use.",
+              "Up to 30 hours of battery life.",
+              "Quick Charge feature: 5 hours of playback with a 10-minute charge.",
+          ]}
+          />
+          <ComparingItem name="Sony WH-1000XM4" image={sony4} price="[Insert Price]" keyFeatures={[
+              "Industry-leading noise cancellation.",
+              "Exceptional sound quality with a balanced audio profile.",
+              "Intuitive touch controls for playback, calls, and volume.",
+              "Comfortable design for prolonged use.",
+              "Up to 30 hours of battery life.",
+              "Quick Charge feature: 5 hours of playback with a 10-minute charge.",
+          ]}/>
+
+          <ComparingItem name="Bose QuietComfort 35 II" image={base} price="[Insert Price]" keyFeatures={[
+              "Industry-leading noise cancellation.",
+              "Exceptional sound quality with a balanced audio profile.",
+              "Intuitive touch controls for playback, calls, and volume.",
+              "Comfortable design for prolonged use.",
+              "Up to 30 hours of battery life.",
+              "Quick Charge feature: 5 hours of playback with a 10-minute charge.",
+          ]}
+          />
+
+          <ComparingItem name="Bose Noise Cancelling Headphones 700" image={base700} price="[Insert Price]" keyFeatures={[
+            "Sleek design with improved noise cancellation.",
+            "Touch controls and customizable EQ through the Bose Music app.",
+          ]}/>
+
+          <ComparingItem name="Sennheiser Momentum Wireless 3" image={sennheiser} price="[Insert Price]" keyFeatures={[
+            "Premium build with genuine leather ear cups.",
+            "Excellent sound quality and strong noise cancellation.",
+            "Comfortable for extended use.",
+          ]}/>
+
+          <ComparingItem name="Apple AirPods Max" image={apple} price="[Insert Price]" keyFeatures={[
+            "Over-ear design with premium build.",
+            "Active Noise Cancellation for an immersive audio experience.",
+            "Seamless integration with Apple devices.",
+          ]}/>
+
+            {/* <!-- Repeat the above section structure for other headphone models --> */}
+
+        </section>
+
+
+        <section>
+            <h2 className="text-2xl font-bold">Price and Feature Comparison</h2>
+            <p>[Create a detailed comparison table with prices, key features, and additional notes for each model.]</p>
+        </section>
+
+        <section>
+            <h2 className="text-2xl font-bold">Conclusion</h2>
+            <p>Selecting the ideal noise-canceling headphones depends on individual preferences, budget, and specific needs. Each model discussed offers a unique set of features, ensuring a tailored experience for users. Always check for the latest reviews and updates, as the technology landscape is constantly evolving.</p>
+        </section>
+        <section>
+            <h2 className="text-2xl font-bold">Links in this blog</h2>
+            <h2 className="text-black/40 font-bold">All this links are amazon links</h2>
+            <ul className="list-disc pl-8 my-4 bg-slate-50 rounded-xl border p-4">
+              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3wcGYiU">Sony WH-1000XM4<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/491gHT0">Sony WH-1000XM3<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3SOVCWh">Bose QuietComfort 35 II<FiArrowUpRight size={24} /></a></li>
+
+              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3OCJlSh">Bose Noise Cancelling Headphones 700<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3upZh3r">Sennheiser Momentum Wireless 3<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3SNTrCq">Apple AirPods Max<FiArrowUpRight size={24} /></a></li>
+            </ul>
+        </section>
+
+    </article>
+    </div>
   );
 }
