@@ -121,13 +121,13 @@ export default function Home() {
             <h2 className="text-2xl font-bold">Links in this blog</h2>
             <h2 className="text-black/40 font-bold">All this links are amazon links</h2>
             <ul className="list-disc pl-8 my-4 bg-slate-50 rounded-xl border p-4">
-              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3wcGYiU">Sony WH-1000XM4<FiArrowUpRight size={24} /></a></li>
-              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/491gHT0">Sony WH-1000XM3<FiArrowUpRight size={24} /></a></li>
-              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3SOVCWh">Bose QuietComfort 35 II<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-sm md:text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3wcGYiU">Sony WH-1000XM4<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-sm md:text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/491gHT0">Sony WH-1000XM3<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-sm md:text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3SOVCWh">Bose QuietComfort 35 II<FiArrowUpRight size={24} /></a></li>
 
-              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3OCJlSh">Bose Noise Cancelling Headphones 700<FiArrowUpRight size={24} /></a></li>
-              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3upZh3r">Sennheiser Momentum Wireless 3<FiArrowUpRight size={24} /></a></li>
-              <li><a className="text-blue-500 font-medium text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3SNTrCq">Apple AirPods Max<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-sm md:text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3OCJlSh">Bose Noise Cancelling Headphones 700<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-sm md:text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3upZh3r">Sennheiser Momentum Wireless 3<FiArrowUpRight size={24} /></a></li>
+              <li><a className="text-blue-500 font-medium text-sm md:text-lg flex gap-2 hover:gap-4 duration-150 hover:bg-slate-100 px-2 rounded-xl py-2 items-center" href="https://amzn.to/3SNTrCq">Apple AirPods Max<FiArrowUpRight size={24} /></a></li>
             </ul>
         </section>
 
