@@ -26,7 +26,7 @@ function ComparingItem({name,image,price,keyFeatures}: Props) {
               <motion.div initial={{opacity:0,y:150}} whileInView={{opacity:1,y:0}}>
                 <Image src={image} alt="Noise-Canceling Headphones" className=" p-4 w-full md:w-[200px] h-[200px] object-contain " width={400} height={400}></Image>
               </motion.div >
-                  <motion.ul initial={{opacity:0,x:0}} whileInView={{opacity:1,x:0}} className="list-decimal  ml-4">
+                  <motion.ul initial={{opacity:0,x:0}} whileInView={{opacity:1,x:0}} className="list-decimal  text-sm md:text-md leading-6  ml-4">
                       <li><strong>Price :</strong> {price} $</li>
                       <li><strong>Key Features:</strong>
                           <ul className="list-disc ml-4">
