@@ -16,7 +16,7 @@ import {motion} from "framer-motion"
 
 export default function Home() {
   return (
-    <div className="max-w-4xl px-4 my-8 mx-auto">
+    <div className="max-w-5xl px-4 my-8 mx-auto">
       <div className="md:my-14 my-6">
           <div className="flex flex-col">
             <h1 className="text-4xl h-8 font-bold text-blue-500">Korazon</h1>
